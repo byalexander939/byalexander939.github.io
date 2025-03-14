@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEXANDER VILLEGAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000;
+            color: white;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        label, textarea, select, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>Formulario de Materiales Promocionales por alexander villegas</center></h2>
+    
+    <form action="#" method="post">
+        <label for="materiales">¿Qué tipo de materiales promocionales desea producir para el evento?</label>
+        <input type="text" id="materiales" name="materiales" placeholder="Ejemplo: folletos, camisetas, banners">
+        
+        <label for="cantidad">¿Cuál es la cantidad aproximada de cada material que necesita?</label>
+        <input type="text" id="cantidad" name="cantidad" placeholder="Ejemplo: 100 folletos, 50 camisetas">
+        
+        <label for="acabados">¿Tiene preferencias específicas en cuanto a materiales o acabados?</label>
+        <input type="text" id="acabados" name="acabados" placeholder="Ejemplo: papel mate, tela de algodón">
+        
+        <label for="personalizacion">¿Requiere personalización en alguno de los productos?</label>
+        <input type="text" id="personalizacion" name="personalizacion" placeholder="Ejemplo: nombres individuales en camisetas">
+        
+        <label for="presupuesto">¿Cuál es su presupuesto estimado para materiales impresos y promocionales?</label>
+        <input type="number" id="presupuesto" name="presupuesto" placeholder="Ingrese su presupuesto en MXN">
+        
+        <label for="diseno">¿Tiene un diseño listo o necesita servicios de diseño gráfico?</label>
+        <select id="diseno" name="diseno">
+            <option value="listo">Tengo un diseño listo</option>
+            <option value="necesito">Necesito servicios de diseño gráfico</option>
+        </select>
+        
+        <label for="fecha">¿Cuál es la fecha límite para la entrega de los materiales?</label>
+        <input type="date" id="fecha" name="fecha">
+        
+        <label for="consideraciones">¿Hay consideraciones especiales que debamos tener en cuenta?</label>
+        <textarea id="consideraciones" name="consideraciones" placeholder="Ejemplo: colores corporativos, logotipos específicos"></textarea>
+        
+        <label for="ecologico">¿Desea opciones ecológicas o sostenibles en los materiales de impresión?</label>
+        <select id="ecologico" name="ecologico">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+        
+        <label for="adicionales">¿Necesita servicios adicionales como empaquetado o distribución de los materiales en el evento?</label>
+        <input type="text" id="adicionales" name="adicionales" placeholder="Ejemplo: empaquetado, distribución">
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
